@@ -1,7 +1,8 @@
-package info.meysam.carfiner
+package info.meysam.carfiner.ui.activity.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import info.meysam.carfiner.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
