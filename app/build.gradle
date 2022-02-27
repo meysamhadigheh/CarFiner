@@ -4,6 +4,15 @@ plugins {
     id 'kotlin-kapt'
 }
 
+if (!file("local.gradle").exists()) {
+    exec {
+        commandLine "sh"
+        args = ["-c", "cp local.gradle.example local.gradle"]
+    }
+}
+
+apply from: "local.gradle"
+
 android {
     compileSdk 32
 
